@@ -2,6 +2,7 @@
 build/
 .gradle/
 gradle/
+.mcreator/
 gradlew
 gradlew.bat
 *.gradle
@@ -31,3 +32,5 @@ mcreator.gradle
 
 # Keep only the compiled JAR for distribution
 !/build/libs/*.jar
+mcreator*
+*.mcreator
