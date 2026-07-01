@@ -1,24 +1,33 @@
-.gradle
-**/build/
-!**/src/**/build/
+# Build files - keep these hidden
+build/
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+*.gradle
 
-# Ignore Gradle GUI config
-gradle-app.setting
+# Source code - keep these hidden
+src/
+elements/
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+# Development/IDE files
+.eclipse/
+.mcreator/
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
 
-# Avoid ignore Gradle wrappper properties
-!gradle-wrapper.properties
+# MCreator workspace files
+*.mcreator
+mcreator.gradle
 
-# Cache of project
-.gradletasknamecache
+# Temporary files
+*.swp
+*.swo
+*~
+.DS_Store
 
-# Eclipse Gradle plugin generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
-
-# All Mod version source code
-source-code
+# Keep only the compiled JAR for distribution
+!/build/libs/*.jar
